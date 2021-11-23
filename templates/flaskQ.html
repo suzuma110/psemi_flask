@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+
+        <ul id="nav">
+        {% for x in lis %}
+            <li>{{ x }}</li>
+        {% endfor %}
+        </ul>
+        <hr>
+
+        <p>{{ "nickname: %s age: %s address: %s" %(dictionary["nickname"], dictionary["age"], dictionary["address"]) }}</p>
+        <hr>
+
+        {% if ran > 5 %}
+            <p>5より大きいです</p>
+        {% else %}
+            <p>5より小さいです</p>
+        {% endif %}
+        <hr>
+        
+    </body>
+</html>
